@@ -30,7 +30,7 @@ public class Usuario implements Serializable {
 		this.correo = correo;
 	}
 
-
+//metodos get y set
 
 
 	public String getUsuario() {
