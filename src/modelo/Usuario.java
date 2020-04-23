@@ -12,7 +12,7 @@ public class Usuario implements Serializable {
 	private String correo;
 	
 	
-	public void Usuario() {
+	public Usuario() {
 		
 		
 	}
