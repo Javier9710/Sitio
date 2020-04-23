@@ -41,17 +41,22 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		// TODO Auto-generated method stub
 		String usuarioTxt = request.getParameter("usuario");
 		String claveTxt = request.getParameter("clave");
 
 		Usuario usuario = new Usuario();
+		usuario.setUsuario(usuarioTxt);
 		usuario.setClave(claveTxt);
 
 		LoginDao loginDao = new LoginDao();
+		System.out.println("uno");
 		
 		String userValidate = loginDao.authenticateUser(usuario);
 		System.out.println(userValidate);
+		System.out.println("uno");
+		
 		if(userValidate.contentEquals("SUCCESS")) {
 			request.setAttribute("userName", usuarioTxt);
 			request.getRequestDispatcher("/home.jsp").forward(request, response);

@@ -8,5 +8,18 @@
 </head>
 <body>
 
+<form action="LoginServlet" method="post">
+		<ul>
+			<li><label for="name">Usuario:</label> <input type="text"
+				id="usuario" name="usuario"></li>
+			<li><label for="mail" >Clave</label> <input type="password" id="mail"
+				name="clave"></li>
+
+			<li class="button">
+				<button type="submit">Ingresar</button>
+			</li>
+		</ul>
+	</form>
+
 </body>
 </html>
