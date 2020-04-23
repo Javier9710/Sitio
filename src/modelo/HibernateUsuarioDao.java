@@ -5,7 +5,7 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-public class metodo implements UsuarioDao {
+public class HibernateUsuarioDao implements UsuarioDao {
 
 	@Override
 	public Usuario selectById(String usuarioId) {

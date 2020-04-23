@@ -1,5 +1,6 @@
 package modelo;
 
+
 public class LoginDao {
 	
 	public String authenticateUser(Usuario usuario) {

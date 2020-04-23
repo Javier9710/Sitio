@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import modelo.HibernateUsuarioDao;
 import modelo.Usuario;
 import modelo.UsuarioDao;
 
@@ -43,7 +44,7 @@ public class registroServlet extends HttpServlet {
 		String nombreTxt = request.getParameter("nombre");
 		String direccionTxt = request.getParameter("direccion");
 		String telefonoTxt = request.getParameter("telefono");
-		String correoTxt = request.getParameter("email");
+		String correoTxt = request.getParameter("correo");
 		
 		Usuario usuario = new Usuario();
 		
